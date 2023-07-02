@@ -1,7 +1,7 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-$(function () {
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -20,4 +20,43 @@ $(function () {
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
-});
+
+
+var saveBtn = $(document.getElementsByClassName("saveBtn"));
+for (var i = 0; i < saveBtn.length; i++) {
+  saveBtn[i].addEventListener("click", function() {
+    var timeBlock = this.parentNode;
+    var id = timeBlock.id;
+    var userInput = timeBlock.querySelector(".description").value;
+    localStorage.setItem(id, userInput);
+  });
+}
+
+var timeBlocks = document.getElementsByClassName("time-block");
+for (var i = 0; i < timeBlocks.length; i++) {
+  var timeBlock = timeBlocks[i];
+  var id = timeBlock.id;
+  var userInput = localStorage.getItem(id);
+  timeBlock.querySelector(".description").value = userInput;
+}
+
+
+
+var currentHour = new Date().getHours();
+var timeBlocks = $(document.getElementsByClassName("time-block"));
+for (var i = 0; i < timeBlocks.length; i++) {
+  var timeBlock = timeBlocks[i];
+  var hour = parseInt(timeBlock.id.split("-")[2]);
+  timeBlock.classList.remove("past", "present", "future");
+  if (hour < currentHour) {
+    timeBlock.classList.add("past");
+  } else if (hour === currentHour) {
+    timeBlock.classList.add("present");
+  } else {
+    timeBlock.classList.add("future");
+  }
+}
+
+var currentDate = new Date().toLocaleDateString("en-US", { weekday:"long", month:"long", day:"numeric" });
+document.getElementById("currentDay").textContent = currentDate;
+
