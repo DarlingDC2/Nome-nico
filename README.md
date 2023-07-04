@@ -51,7 +51,7 @@ Please refer to the LICENSE in the Git Repository 'Nome-Unico'
 
 
 ## Link
-[Published Page](https://darlingdc2.github.io/nome-unico/)
+[Published Page](https://darlingdc2.github.io/Nome-unico/)
 
 #### Feel free to google-translate my repository names, they've got to be unique.
 ---
