@@ -20,11 +20,11 @@ To use this application, it doesn't take too much effort.  You have your header,
 Opening developer tools on the browser using shortcut - "ctrl+shift+i", You'll be able to see in the Application tag under "storage" your saved information.
 
 
-### Well, it's only 9am. you've got some time to relax.
+#### Well, it's only 9am. you've got some time to relax.
 
 <img src="02-Challenge\Assets\9amSS.png" alt="work day schedule with 9am current time" />
 
-### Get to Work!
+#### Get to Work!
 
 <img src="02-Challenge\Assets\10amSS.png" alt="work day schedule with 10am current time" />
 
@@ -53,7 +53,7 @@ Please refer to the LICENSE in the Git Repository 'Nome-Unico'
 ## Link
 [Published Page](https://darlingdc2.github.io/nome-unico/)
 
-### Feel free to google translate my repository names, they've got to be unique.
+Feel free to google translate my repository names, they've got to be unique.
 ---
 
 
