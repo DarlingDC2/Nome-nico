@@ -22,11 +22,11 @@ Opening developer tools on the browser using shortcut - "ctrl+shift+i", You'll b
 
 #### Well, it's only 9am. you've got some time to relax.
 
-<img src="02-Challenge\Assets\9amSS.png" alt="work day schedule with 9am current time" />
+<img src="Assets\9amSS.png" alt="work day schedule with 9am current time" />
 
 #### Get to Work!
 
-<img src="02-Challenge\Assets\10amSS.png" alt="work day schedule with 10am current time" />
+<img src="Assets\10amSS.png" alt="work day schedule with 10am current time" />
 
 
 ## Credits
